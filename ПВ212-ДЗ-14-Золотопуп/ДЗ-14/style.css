@@ -1,0 +1,16 @@
+canvas {
+    border: 1px solid black;
+    margin-left: 20px;
+  }
+  
+  #controls {
+    margin-top: 10px;
+  }
+  
+  #controls label, #controls select, #controls input, #controls button {
+    margin-right: 10px;
+  }
+
+  div {
+    margin: 20px 60px;
+  }

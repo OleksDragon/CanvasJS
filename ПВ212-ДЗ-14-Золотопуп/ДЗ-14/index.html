@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Canvas Drawing</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <canvas id="canvas" width="600" height="400"></canvas>
+  <div id="controls">
+    <label for="shape">Choose a shape:</label>
+    <select id="shape">        
+        <option value="circle">Circle</option>
+        <option value="rectangle">Rectangle</option>
+        <option value="ellipse">Ellipse</option>
+        <option value="triangle">Triangle</option>
+        <option value="arc">Arc</option>
+        <option value="delete">Delete</option>
+    </select>
+    <label for="color">Choose a color:</label>
+    <input type="color" id="color">
+    <div id="rectangleOptions" style="display: none;">
+        <label for="width">Width:</label>
+        <input type="number" id="width" min="1" value="100">
+        <label for="height">Height:</label>
+        <input type="number" id="height" min="1" value="80">
+    </div>
+    <div id="circleOptions">
+        <label for="radius">Radius:</label>
+        <input type="number" id="radius" min="1" value="50">
+    </div>
+    <div id="ellipseOptions" style="display: none;">
+        <label for="ellipseWidth">Width:</label>
+        <input type="number" id="ellipseWidth" min="1" value="100">
+        <label for="ellipseHeight">Height:</label>
+        <input type="number" id="ellipseHeight" min="1" value="80">
+    </div>
+    <div id="triangleOptions" style="display: none;">
+        <label for="triangleSideLength">Side Length:</label>
+        <input type="number" id="triangleSideLength" min="1" value="100">
+    </div>
+    <div id="arcOptions" style="display: none;">
+        <label for="arcRadius">Radius:</label>
+        <input type="number" id="arcRadius" min="1" value="50">
+    </div>
+    <div>
+        <button id="undo">Undo</button>
+        <button id="clear">Clear</button>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
